@@ -1,6 +1,6 @@
 import ChinesePalaceImage from "./pics/GoldenPalace.jpg";
-import ".styles.css";
-const image = document.createElement("img")
-image.src = ChinesePalaceImage
-document.body.appendChild(image)
+import "./styles.css";
+const CPimage = document.createElement("img")
+CPimage.src = ChinesePalaceImage
+document.body.appendChild(CPimage)
 ContentDiv = document.querySelector("div#content")
