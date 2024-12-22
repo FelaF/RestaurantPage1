@@ -1,18 +1,36 @@
 body {
     background-color: rgb(244,179,97);
+    background-image: url("./pics/GoldenPalace.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+
+
 }
 
-h1 {
-    text-align: center;
-}
-
-nav{
+header {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+
+}
+header div {
+    font-weight:300px;
+}
+
+
+img:first-child{
+    position: relative;
 }
 
 button {
    background-color:rgb(244,179,97);
    color:orangered;
    border-color: rgb(244,179,97);
+   font-size: 2.2rem;
+}
+
+footer {
+    position:static;
 }

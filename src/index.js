@@ -1,6 +1,17 @@
-import ChinesePalaceImage from "./pics/GoldenPalace.jpg";
 import "./styles.css";
-const CPimage = document.createElement("img")
-CPimage.src = ChinesePalaceImage
-document.body.appendChild(CPimage)
-ContentDiv = document.querySelector("div#content")
+const homeBtn = document.querySelector(".homeBtn")
+const menuBtn = document.querySelector(".menuBtn")
+const contactBtn = document.querySelector(".contactBtn")
+import { MenuCreation } from "./menu";
+import { ContactCreation } from "./contact";
+import { contentContainer } from "./content";
+
+menuBtn.addEventListener("click", ()=> {
+    contentContainer.innerHTML = ``;
+    MenuCreation();
+})
+
+contactBtn.addEventListener("click", ()=> {
+    contentContainer.innerHTML = ``;
+    ContactCreation();
+})
