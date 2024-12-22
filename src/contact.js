@@ -1,4 +1,7 @@
+import { contentContainer } from "./content";
+
 const ContentContainer = document.querySelector("#content")
+console.log(contentContainer)
 
 const ContactCreation = () => {
     const contact  = document.createElement("div");
